@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "Style.css">
+    <link rel = "icon" href = "logo4.png">
+    <title>Kinross RFC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+    </style>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+          }
+    </script>
+
+
+    <div id = "mySidenav" class = "sidenav">
+        <a href="javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+        <!-- <img src = "Logo2.jfif" height = 150 width = 200> -->
+        <a href = "#">News</a>
+        <!-- <a href = "#">Teams</a> -->
+        <button class="accordion">Teams</button>
+            <div class="panel">
+                <a href = "#">1st Xv</a>
+                <a href = "#">2nd Xv</a>
+                <a href = "#">Juniors</a>
+                <a href = "#">Over 35s</a>
+            </div>
+
+        <!-- <a href = "#">About Us</a> -->
+        <a href = "Gallery.html">Gallery</a>
+        <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/" target= "_blank">Club Shop</a>
+        <a href = "contact.html">Contact</a>
+        <a href = "join.html">Join Us!</a>
+
+
+    </div>
+
+    <nav class = "nav-bar">
+        <a href = "index.html"><img class = logo-left src = "Logo4.png" height = 150px width = 200px></a>
+        <a href = "index.html"><p class = title >KINROSS RFC</p></a>
+        <!-- <a href = "index.html"><img class = logo-right src = "Logo4.png" height = 150 width = 200></a> -->
+        <div class = "topnav">
+            <!-- <img src = "Logo2.jfif" height = 150 width = 200> -->
+        <a href = "news.html">News</a>
+        <!-- <a href = "#">Teams</a> -->
+        <button class="accordion">Teams</button>
+            <div class="panel">
+                <a href = "#">1st Xv</a>
+                <a href = "#">2nd Xv</a>
+                <a href = "#">Juniors</a>
+                <a href = "#">Over 35s</a>
+            </div>
+
+        <!-- <a href = "#">About Us</a> -->
+        <a href = "Gallery.html">Gallery</a>
+        <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/" target= "_blank">Club Shop</a>
+        <a href = "contact.html">Contact</a>
+        <a href = "join.html">Join Us!</a>
+
+        </div>
+        <div class = "menubar" onclick = "myFunction(this);openNav();">
+            <div class = bar1></div>
+            <div class = bar2></div>
+            <div class = bar3></div>
+        </div>
+    </nav>
+
+    <div class = s1516kirka-content>
+        <h1>Kirkcaldy 5 March 2016</h1>
+        <div id="cincopa_8e7fd2">...</div><script type="text/javascript">
+            var cpo = []; cpo["_object"] ="cincopa_8e7fd2"; cpo["_fid"] = "AQKAi3-53M01";
+            var _cpmp = _cpmp || []; _cpmp.push(cpo);
+            (function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+            cp.async = true; cp.src = "https://rtcdn.cincopa.com/libasync.js";
+            var c = document.getElementsByTagName("script")[0];
+            c.parentNode.insertBefore(cp, c); })(); </script>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("content").style.marginLeft = "2px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("content").style.marginLeft = "0";
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+}
+    </script>
+    <footer>
+        <div class = "soc-med">
+            <h3>Social Media</h3>
+            <a href = "https://www.facebook.com/KinrossRugbyClub/" target="_blank"><img class = logo src = "facebook.png" height = 80 width = 80></a>
+            <a href = "https://twitter.com/kinrossrugby" target="_blank"><img class = logo src = "twitter.png" height = 80 width = 80></a>
+        </div>
+
+        <div class = "sponsors">
+            <h3>Club Sponsors</h3>
+            <a href = "https://www.sohowealth.co.uk/" target="_blank"><img class = logo src = "sponsor1.jfif" height = 80 width = 160></a>
+            <a href = "https://www.mitsubishi-motors.co.uk/dealers/fife" target="_blank"><img class = logo src = "sponsor2.jfif" height = 80 width = 160></a>
+            <a href = "https://www.linkedin.com/company/metocean-engineering-limited/" target="_blank"><img class = logo src = "sponsor3.jfif" height = 80 width = 180></a>
+        </div>
+
+        <div class = "affiliations">
+            <h3>Affiliations</h3>
+            <a href = "https://www.scottishrugby.org/" target="_blank"><img class = logo src = "affiliation1.png" height = 80 width = 140></a>
+        </div>
+
+    </footer>
+</body>
+</html>

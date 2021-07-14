@@ -1,0 +1,179 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("fraserross@hotmail.com", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "Style.css">
+    <link rel = "icon" href = "logo4.png">
+    <title>Kinross RFC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Permanent+Marker&display=swap');
+    </style>
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+          }
+    </script>
+
+
+    <div id = "mySidenav" class = "sidenav">
+        <a href="javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+        <!-- <img src = "Logo2.jfif" height = 150 width = 200> -->
+        <a href = "news.html">News</a>
+        <!-- <a href = "#">Teams</a> -->
+        <button class="accordion">Teams</button>
+            <div class="panel">
+                <a href = "#">1st Xv</a>
+                <a href = "#">2nd Xv</a>
+                <a href = "#">Juniors</a>
+                <a href = "#">Over 35s</a>
+            </div>
+
+        <!-- <a href = "#">About Us</a> -->
+        <a href = "Gallery.html">Gallery</a>
+        <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/" target= "_blank">Club Shop</a>
+        <a href = "contact.html">Contact</a>
+        <a href = "join.html">Join Us!</a>
+
+    </div>
+
+    <nav class = "nav-bar">
+        <a href = "index.html"><img class = logo-left src = "Logo4.png" height = 150px width = 200px></a>
+        <a href = "index.html"><p class = title >KINROSS RFC</p></a>
+        <!-- <a href = "index.html"><img class = logo-right src = "Logo4.png" height = 150 width = 200></a> -->
+        <div class = "topnav">
+            <!-- <img src = "Logo2.jfif" height = 150 width = 200> -->
+            <a href = "news.html">News</a>
+            <div class = "dropdown">
+                <button class="dropbtn">Teams 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href = "#">1st Xv</a>
+                    <a href = "#">2nd Xv</a>
+                    <a href = "#">Juniors</a>
+                    <a href = "#">Over 35s</a>
+                </div>
+              </div> 
+            <!-- </div> -->
+            <!-- <a href = "#">About Us</a> -->
+            <a href = "Gallery.html">Gallery</a>
+            <!-- <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/" target= "_blank">Club Shop</a> -->
+            <div class = "dropdown">
+                <button class="dropbtn">Club Shop 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/kinross-rfc-adults/" target="_blank">Adult</a>
+                    <a href = "https://www.ragingbullsportswear.com/product-category/rugby-union-club-stores/kinross-rfc/kinross-rfc-juniors/" target="_blank">Juniors</a>
+                </div>
+            </div>
+            <a href = "contact.html">Contact</a>
+            <a href = "join.html">Join Us!</a>
+        </div>
+        <div class = "menubar" onclick = "myFunction(this);openNav();">
+            <div class = bar1></div>
+            <div class = bar2></div>
+            <div class = bar3></div>
+        </div>
+    </nav>
+
+        <div class = join-content>
+
+            <h1>Come and be part of Kinross RFC!</h1>
+
+
+            <div class = "join">
+                <p>New members are always keenly welcomed at Kinross Rugby Club. <br> 
+                    Weather you want to pull the boots on to help us acheive on the park <br>
+                    or if you'd like to enjoy the social side as an associate member, you will be made welcome here!
+                </p>
+                <h2>Training: 7pm Tuesday and Thurday at KGV Playing Fields</h2>
+               
+                <img src = "huddle.jpg" height="20%" width="80%">
+
+
+
+            </div> 
+
+        </div> 
+
+
+
+
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+            document.getElementById("content").style.marginLeft = "2px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("content").style.marginLeft = "0";
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+}
+    </script>
+    <footer>
+        <div class = "soc-med">
+            <h3>Social Media</h3>
+            <a href = "https://www.facebook.com/KinrossRugbyClub/" target="_blank"><img class = logo src = "facebook.png" height = 80 width = 80></a>
+            <a href = "https://twitter.com/kinrossrugby" target="_blank"><img class = logo src = "twitter.png" height = 80 width = 80></a>
+        </div>
+
+        <div class = "sponsors">
+            <h3>Club Sponsors</h3>
+            <a href = "https://www.sohowealth.co.uk/" target="_blank"><img class = logo src = "sponsor1.jfif" height = 80 width = 160></a>
+            <a href = "https://www.mitsubishi-motors.co.uk/dealers/fife" target="_blank"><img class = logo src = "sponsor2.jfif" height = 80 width = 160></a>
+            <a href = "https://www.linkedin.com/company/metocean-engineering-limited/" target="_blank"><img class = logo src = "sponsor3.jfif" height = 80 width = 180></a>
+        </div>
+
+        <div class = "affiliations">
+            <h3>Affiliations</h3>
+            <a href = "https://www.scottishrugby.org/" target="_blank"><img class = logo src = "affiliation1.png" height = 80 width = 140></a>
+        </div>
+
+    </footer>
+</body>
+</html>
