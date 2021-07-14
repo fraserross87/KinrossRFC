@@ -412,6 +412,9 @@ body{
 .topnav > a:hover{
     color: white;
 }
+.panel > a:hover{
+    color: white;
+}
 
 
 /* unvisited link */
